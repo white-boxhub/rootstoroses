@@ -978,7 +978,7 @@
 </div>
 <div class="bee-block bee-block-2 bee-form">
 <!-- form -->
-<form name="message from website" accept-charset="UTF-8" action="ACTION_PLACEHOLDER" autocomplete="on" enctype="multipart/form-data" method="post" target="_self" data-netlify="true" data-netlify-recaptcha="true">
+<form name="message from website" accept-charset="UTF-8" action="ACTION_PLACEHOLDER" autocomplete="on" enctype="multipart/form-data" method="post" target="_self" data-netlify="true" netlify-honeypot="bot-field">
 <input type="hidden" name="subject" value="Message from Website" />
 <div class="bee-form-row">
 <div class="bee-field bee-field-r13c0m1i1"><label for="r13c0m1i1">Name</label><input id="r13c0m1i1" name="firstname" required="" type="text"/></div>
@@ -995,7 +995,11 @@
 <div class="bee-form-row">
 <div class="bee-field bee-field-r13c0m1i5 bee-inline-field"><span class="bee-form-option-wrapper"><input id="r13c0m1i5" name="privacy_policy" type="checkbox"/><label class="inline" for="r13c0m1i5">I agree to the <a href="https://url_of_terms&privacy.com">Terms &amp; Privacy Policy</a></label></span></div>
 </div>
-<div data-netlify-recaptcha="true" style="text-align:center"></div>
+<p class="hidden">
+    <label>
+      Don’t fill this out if you’re human: <input name="bot-field" />
+    </label>
+  </p>
 <div class="bee-form-row">
 <div class="bee-field bee-field-r13c0m1i6">
 <div class="bee-button-container"><button id="r13c0m1i6" name="submit" type="submit" value="SEND">SEND</button></div>
